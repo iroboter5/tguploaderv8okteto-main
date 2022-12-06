@@ -27,20 +27,36 @@ class JsonDatabase(object):
         dbfile.close()
 
     def create_user(self,name):
-        self.items[name] = {'login': '---',
-                            'githubuser': '---',
-                     'password': '---',
+        self.items[name] = {'dir': '',
+                     'cloudtype': 'moodle',
+                     'moodle_host': '---',
+                     'moodle_repo_id': 4,
+                     'moodle_user': '---',
+                     'moodle_password': '---',
                      'isadmin': 0,
                      'zips': 100,
-                     'path_upload':'---'}
+                     'uploadtype':'calendar',
+                     'proxy':'',
+                     'tokenize':0,
+                     'rename':0,
+                     'autoup':0,
+                     'urlshort':0}
 
     def create_admin(self,name):
-        self.items[name] = {'login': '---',
-                            'githubuser': '---',
-                     'password': '---',
+        self.items[name] = {'dir': '',
+                     'cloudtype': 'moodle',
+                     'moodle_host': '---',
+                     'moodle_repo_id': 4,
+                     'moodle_user': '---',
+                     'moodle_password': '---',
                      'isadmin': 1,
                      'zips': 100,
-                     'path_upload':'---'}
+                     'uploadtype':'calendar',
+                     'proxy':'',
+                     'tokenize':0,
+                     'rename':0,
+                     'autoup':0,
+                     'urlshort':0}
 
     def remove(self,name):
         try:
