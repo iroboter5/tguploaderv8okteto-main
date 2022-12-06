@@ -51,5 +51,5 @@ def parsetoken(token):
 #uri = decrypt(uri)
 #userdata = parsetoken(tokens[-1])
 #print(url)
-proxy = encrypt('152.206.85.87:3030')
-print('*proxy socks5://' + proxy)
+#proxy = encrypt('152.206.201.33:4545')
+#print(proxy)
